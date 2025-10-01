@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!-- Declara que o documento segue o padrão HTML5 -->
-<html lang="en"> <!-- Melhor usar "pt-br", já que o conteúdo está em português -->
+<html lang="pt-br"> <!-- Melhor usar "pt-br", já que o conteúdo está em português -->
 
 <head>
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres (suporta acentos) -->
@@ -7,51 +7,85 @@
     <title>Mundial do São Paulo</title> <!-- Título exibido na aba do navegador -->
     <style>
         #titulo,
-        #imagem {
-            text-align: center; /* Centraliza o título e a imagem */
+        #imagem,
+        footer {
+            text-align: center;
+            /* Centraliza o título e a imagem */
         }
 
         main {
-            margin: 0 auto; /* Centraliza horizontalmente */
-            width: 60%; /* Ocupa 60% da largura da tela */
-            background-color: white; /* Fundo branco para destacar o conteúdo */
-            padding: 10px; /* Espaço interno */
+            margin: 0 auto;
+            /* Centraliza horizontalmente */
+            width: 60%;
+            /* Ocupa 60% da largura da tela */
+            background-color: white;
+            /* Fundo branco para destacar o conteúdo */
+            padding: 10px;
+            /* Espaço interno */
         }
 
         body {
-            background-color: aqua; /* Cor de fundo da página */
+            background-color: rgb(240, 240, 240);
+            /* Cor de fundo da página */
             /* Sugestão: usar uma cor mais neutra (ex: #f0f0f0) para facilitar a leitura */
+            margin: 0;
+            /* Sugestão: margin: 0; - Remove margem padrão do body */
         }
 
         img {
-            max-width: 100%; /* Sugestão: torna a imagem responsiva */
-            height: auto; /* Mantém a proporção original */
+            max-width: 100%;
+            /* Sugestão: torna a imagem responsiva */
+            height: auto;
+            /* Mantém a proporção original */
+        }
+
+        p{
+            text-align: justify;
         }
     </style>
 </head>
 
 <body>
     <nav> <!-- Menu de navegação -->
-        <!-- Sugestão: envolver os links em <ul><li> para melhorar acessibilidade e semântica -->
-        <a href="index.html">Home</a>
-        <a href="historia.html">História do time</a>
-        <a href="escalacao.html">Escalação do título</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">História do time</a></li>
+            <li><a href="escalacao.html">Escalação</a></li>
+        </ul>
     </nav>
 
     <main> <!-- Conteúdo principal da página -->
         <h1 id="titulo">São Paulo</h1>
         <div id="imagem">
-            <img src="imagens/melhortime.png" alt="Escudo do São Paulo" width="200" height="200"> 
+            <img src="imagens/melhortime.png" alt="Escudo do São Paulo" width="200" height="200">
+            <figcaption style="font-size: medium;">Escudo do São Paulo (Melhor time)</figcaption>
         </div>
+        <h2>Sobre:</h2>
         <p>
             O São Paulo Futebol Clube é um dos clubes mais bem-sucedidos do Brasil e do mundo. Fundado em 1930, o clube
-            conquistou inúmeros títulos nacionais e internacionais ao longo de sua história. Entre suas conquistas mais
-            notáveis estão os três títulos da Copa Libertadores da América (1992, 1993 e 2005) e os três títulos do
-            Mundial de Clubes da FIFA (1992, 1993 e 2005). O São Paulo é conhecido por sua forte base de torcedores, sua
-            infraestrutura moderna e seu compromisso com a formação de jovens talentos no futebol.
+            conquistou inúmeros títulos nacionais e internacionais ao longo de sua história.
         </p>
+        <hr>
+        <h2>Conquistas:</h2>
+        <p>Entre suas conquistas mais notáveis estão os três títulos da Copa Libertadores da América (1992, 1993 e 2005)
+            e os três títulos do
+            Mundial de Clubes da FIFA (1992, 1993 e 2005). O São Paulo é conhecido por sua forte base de torcedores, sua
+            infraestrutura moderna e seu compromisso com a formação de jovens talentos no futebol.</p>
+        
+        <hr>
+        <h2>Estádio:</h2>
+        <p>O estádio do São Paulo, o Morumbi, é um dos maiores do Brasil e já sediou diversos eventos esportivos e culturais ao
+            longo dos anos. O clube também é conhecido por sua rivalidade com outros times paulistas, como Corinthians e
+            Palmeiras.</p>
+        <div id = "imagem">
+            <img src="imagens/MelhorEstadio.jpg" alt="Morumbis"
+                width="200" 
+                height="150">
+            <figcaption style="font-size: small;">Estádio do São Paulo (Morumbi)</figcaption>
+        </div>
         <!-- Sugestão: para textos longos, dividir em mais parágrafos para melhorar a leitura -->
     </main>
+    <footer>Mundial do São Pai do Corinthians</footer>
 
     <!--<script src="MeuScript.js"></script>--> <!-- Exemplo de inclusão de JavaScript -->
 </body>
