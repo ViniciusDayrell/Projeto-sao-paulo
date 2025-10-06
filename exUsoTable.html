@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de tabelas</title>
+</head>
+
+<body>
+    <h3>Exemplo 1</h3>
+    <table border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Camisa</td>
+            <td>R$ 50,00</td>
+        </tr>
+        <tr>
+            <td>Calça</td>
+            <td>R$ 90,00</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h3>Exemplo 2 - uso da tag <u>caption</u></h3>
+    <table border="1">
+        <caption>Tabela de Gastos Mensais</caption>
+        <tr>
+            <th>Categoria</th>
+            <th>Valor (R$)</th>
+        </tr>
+        <tr>
+            <td>Alimentação</td>
+            <td>600,00</td>
+        </tr>
+        <tr>
+            <td>Transporte</td>
+            <td>300,00</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h3>Exemplo 3 - uso dos atributos <u>colspan</u> e <u>rowspan</u></h3>
+    <!--
+        colspan: Faz uma célula ocupar mais de uma coluna na mesma linha.
+        rowspan: Faz uma célula ocupar mais de uma linha na mesma coluna.
+    -->
+    <table border="1">
+        <tr>
+            <th rowspan="2">Nome</th>
+            <th colspan="2">Notas</th>
+        </tr>
+        <tr>
+            <th>Prova 1</th>
+            <th>Prova 2</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>8.5</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>7.0</td>
+            <td>8.0</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h3>Exemplo 4 - uso das tags <u>thead</u>, <u>tbody</u> e <u>tfoot</u></h3>
+    <!--
+    <thead> (Cabeçalho) — onde ficam os títulos.
+    <tbody> (Corpo) — onde ficam os dados.
+    <tfoot> (Rodapé) — útil para totais ou observações.
+
+    Esses elementos melhoram a estrutura sem mudar o visual, mas deixam o código mais semântico e claro.
+    
+    -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camisa</td>
+                <td>R$ 50,00</td>
+            </tr>
+            <tr>
+                <td>Calça</td>
+                <td>R$ 90,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>R$ 140,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+
+    <h3>Exemplo 5 - uso de imagens em uma tabela</h3>
+    <table border="1">
+        <tr>
+            <td><img src="/imagensTabela/imagem1.jpg" alt="Imagem 1" width="100" height="100"></td>
+            <td><img src="/imagensTabela/imagem2.jpg" alt="Imagem 2" width="100" height="100"></td>
+            <td><img src="/imagensTabela/imagem3.jpg" alt="Imagem 3" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td><img src="/imagensTabela/imagem4.jpg" alt="Imagem 4" width="100" height="100"></td>
+            <td><img src="/imagensTabela/imagem5.jpg" alt="Imagem 5" width="100" height="100"></td>
+            <td><img src="/imagensTabela/imagem6.jpg" alt="Imagem 6" width="100" height="100"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
