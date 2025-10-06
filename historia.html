@@ -26,6 +26,21 @@
             margin: 0;
         }
 
+        nav ul{
+            list-style: none;
+            background-color: #a40000;
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         /* Sugestão: adicionar estilo para o menu de navegação */
     </style>
 </head>
@@ -33,7 +48,7 @@
 <body>
     <nav> <!-- Menu de navegação -->
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Página Principal</a></li>
             <li><a href="historia.html">História do time</a></li>
             <li><a href="escalacao.html">Escalação</a></li>
         </ul>
@@ -49,20 +64,51 @@
 
         <h2>Principais títulos</h2>
         <a href="/Projeto-sao-paulo/exUsoTable.html">Ver exemplos de tabelas</a>
-        <!-- SUGESTÃO DE ATIVIDADE: criar uma tabela HTML abaixo deste título -->
-        <!-- A tabela pode conter colunas como: Competição | Número de Títulos | Anos de Conquista -->
-        <!-- Exemplo:
-            <table></table> Tag para criar a tabela
-            <tr></tr> Tag para criar uma linha na tabela
-            <th></th> Tag para criar o cabeçalho da tabela
-            <td></td> Tag para criar uma célula na tabela
-        -->
+
+        <table border="1">
+            <caption>Principais títulos do São Paulo</caption>
+            <tr>
+                <th>Títulos</th>
+                <th>Número de títulos</th>
+                <th>Ano</th>
+            </tr>
+            <tr>
+                <td>Libertadores</td>
+                <td>3</td>
+                <td>1992, 1993 e 2005</td>
+            </tr>
+            <tr>
+                <td>Copa do Brasil</td>
+                <td>1</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Brasileiro</td>
+                <td>6</td>
+                <td>1977, 1986, 1991, 2006, 2007 e 2008</td>
+            </tr>
+            <tr>
+                <td>Mundial</td>
+                <td>3</td>
+                <td>1992, 1993, 2005</td>
+            </tr>
+        </table>
         <hr>
-
-
-
         <h2>Ídolos</h2>
-        <!-- SUGESTÃO: criar uma lista com os principais ídolos do clube -->
+        <ul>
+            <li>Kaká</li>
+            <li>Rogério Ceni</li>
+            <li>Raí</li>
+            <li>Lugano</li>
+            <li>Müller</li>
+            <li>Careca</li>
+            <li>Luiz Fabiano</li>
+            <li>Toninho Cerezo</li>
+            <li>Serginho Chulapa</li>
+            <li>Leônidas da Silva</li>
+            <li>Zetti</li>
+            <li>Telê Santana</li>
+        </ul>
         <hr>
     </main>
 </body>
