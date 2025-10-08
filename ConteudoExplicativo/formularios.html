@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Define a fonte padrão para todos os elementos da página */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+    <p>Formulários são elementos HTML que permitem a interação do usuário com a página web, possibilitando o envio de
+        dados para o servidor ou a realização de ações específicas. Eles são amplamente utilizados em diversas
+        aplicações, como cadastros, pesquisas, login, entre outros.
+    </p>
+    <hr>
+
+    <h3>Primeiro exemplo de um formulario</h3>
+    <form>
+        <p>Nome:
+            <br>
+            <!-- Campo de entrada de texto simples para o nome -->
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            <!-- Botão que envia os dados do formulário -->
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+    <hr>
+
+    <h3>Segundo exemplo de um formulario</h3>
+    <form>
+        <!-- Label associa o texto "Nome" ao campo de texto -->
+        <label for="nome">Nome:</label><br>
+        <!-- Campo de texto para digitar o nome -->
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+
+        <!-- Campo de texto do tipo email (valida formato de email automaticamente) -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+
+        <!-- Campo para senha: os caracteres digitados ficam ocultos -->
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br><br>
+
+        <!-- Campo numérico para idade, com limites mínimo e máximo -->
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="0" max="120"><br><br>
+
+        <!-- Campo de seleção (menu suspenso) com várias opções -->
+        <label for="genero">Gênero:</label><br>
+        <select id="genero" name="genero">
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <!-- Conjunto de caixas de seleção (checkbox) que permitem múltiplas escolhas -->
+        <label>Interesses:</label><br>
+
+        <input type="checkbox" id="futebol" name="interesses" value="futebol">
+        <label for="futebol">Futebol</label><br>
+
+        <input type="checkbox" id="musica" name="interesses" value="musica">
+        <label for="musica">Música</label><br>
+
+        <input type="checkbox" id="viagem" name="interesses" value="viagem">
+        <label for="viagem">Viagem</label><br><br>
+
+        <!-- Área de texto para mensagens longas -->
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea><br><br>
+
+        <!-- Botão que envia o formulário -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
