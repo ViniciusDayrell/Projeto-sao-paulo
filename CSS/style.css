@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+#cabecalho{
+    text-align: center;
+}
+
+#nav-bar{
+    margin: 20px 0;
+    padding: 10px;
+    background-color: black;
+
+}
+
+#nav-bar ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+#nav-bar a:hover{
+    color: tomato;
+    transform: scale(1.05);
+}
+
+

@@ -15,61 +15,32 @@
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres (suporta acentos) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade em celulares -->
     <title>Mundial do São Paulo</title> <!-- Título exibido na aba do navegador -->
-    <style>
-        #titulo,
-        #imagem,
-        footer {
-            text-align: center;
-            /* Centraliza o título e a imagem */
-        }
 
-        main {
-            margin: 0 auto;
-            /* Centraliza horizontalmente */
-            width: 60%;
-            /* Ocupa 60% da largura da tela */
-            background-color: white;
-            /* Fundo branco para destacar o conteúdo */
-            padding: 10px;
-            /* Espaço interno */
-        }
-
-        body {
-            background-color: rgb(240, 240, 240);
-            /* Cor de fundo da página */
-            /* Sugestão: usar uma cor mais neutra (ex: #f0f0f0) para facilitar a leitura */
-            margin: 0;
-            /* Sugestão: margin: 0; - Remove margem padrão do body */
-        }
-
-        img {
-            max-width: 100%;
-            /* Sugestão: torna a imagem responsiva */
-            height: auto;
-            /* Mantém a proporção original */
-        }
-
-        p {
-            text-align: justify;
-        }
-    </style>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-    <nav> <!-- Menu de navegação -->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="historia.html">História do time</a></li>
-            <li><a href="escalacao.html">Escalação</a></li>
-        </ul>
-    </nav>
+    <header id="cabecalho">
+        <div id="titulo-conteudo">
+            <h1>São Paulo</h1>
+            <div id="imagem">
+                <img src="imagens/melhortime.png" alt="Escudo do São Paulo" width="100" height="100">
+                <figcaption style="font-size: medium;">Escudo do São Paulo (Melhor time)</figcaption>
+            </div>
+        </div>
+
+        <nav id="nav-bar"> <!-- Menu de navegação -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">História do time</a></li>
+                <li><a href="escalacao.html">Escalação</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <main> <!-- Conteúdo principal da página -->
-        <h1 id="titulo">São Paulo</h1>
-        <div id="imagem">
-            <img src="imagens/melhortime.png" alt="Escudo do São Paulo" width="200" height="200">
-            <figcaption style="font-size: medium;">Escudo do São Paulo (Melhor time)</figcaption>
-        </div>
+        
         <h2>Sobre:</h2>
         <p>
             O São Paulo Futebol Clube é um dos clubes mais bem-sucedidos do Brasil e do mundo. Fundado em 1930, o clube
