@@ -5,116 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História</title>
-    <style>
-        main {
-            margin: 0 auto;
-            /* Centraliza horizontalmente */
-            width: 60%;
-            /* Ocupa 60% da largura da tela */
-            background-color: white;
-            /* Fundo branco para destacar o conteúdo */
-            padding: 10px;
-            /* Espaço interno */
-
-            /* Sugestão: adicionar uma borda ou sombra ao conteúdo principal */
-
-        }
-
-        body {
-            background-color: rgb(240, 240, 240);
-            /* Cor de fundo da página */
-            margin: 0;
-        }
-
-        nav ul{
-            list-style: none;
-            background-color: #a40000;
-            padding: 10px;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        nav ul li a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer{
-            text-align: center;
-        }
-
-        /* Sugestão: adicionar estilo para o menu de navegação */
-    </style>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-    <nav> <!-- Menu de navegação -->
-        <ul>
-            <li><a href="index.html">Página Principal</a></li>
-            <li><a href="historia.html">História do time</a></li>
-            <li><a href="escalacao.html">Escalação</a></li>
-        </ul>
-    </nav>
+    <header id="cabecalho">
+        <div id="titulo-conteudo">
+            <h1>São Paulo</h1>
+            <div id="imagem">
+                <img src="imagens/melhortime.png" alt="Escudo do São Paulo" width="100" height="100">
+                <figcaption style="font-size: medium;">Escudo do São Paulo (Melhor time)</figcaption>
+            </div>
+        </div>
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">História do time</a></li>
+                <li><a href="escalacao.html">Escalação</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <h1>História do SPFC</h1>
+        <div class="conteudo-principal">
 
-        <h2>Fundação do time</h2>
-        <p>O São Paulo Futebol Clube, fundado em 25 de janeiro de 1930, é um dos clubes mais tradicionais e
-            bem-sucedidos do futebol brasileiro. Com uma rica história repleta de conquistas nacionais e internacionais,
-            o São Paulo é conhecido por sua torcida apaixonada e por revelar grandes talentos ao longo dos anos.</p>
+            <h2 id="titulo-historia">História do SPFC</h2>
+            <section class="section-conteudo">
 
-        <h2>Principais títulos</h2>
-        <table border="1">
-            <caption>Principais títulos do São Paulo</caption>
-            <tr>
-                <th>Títulos</th>
-                <th>Número de títulos</th>
-                <th>Ano</th>
-            </tr>
-            <tr>
-                <td>Libertadores</td>
-                <td>3</td>
-                <td>1992, 1993 e 2005</td>
-            </tr>
-            <tr>
-                <td>Copa do Brasil</td>
-                <td>1</td>
-                <td>2023</td>
-            </tr>
-            <tr>
-                <td>Brasileiro</td>
-                <td>6</td>
-                <td>1977, 1986, 1991, 2006, 2007 e 2008</td>
-            </tr>
-            <tr>
-                <td>Mundial</td>
-                <td>3</td>
-                <td>1992, 1993, 2005</td>
-            </tr>
-        </table>
-        <hr>
-        <h2>Ídolos</h2>
-        <ul>
-            <li>Kaká</li>
-            <li>Rogério Ceni</li>
-            <li>Raí</li>
-            <li>Lugano</li>
-            <li>Müller</li>
-            <li>Careca</li>
-            <li>Luiz Fabiano</li>
-            <li>Toninho Cerezo</li>
-            <li>Serginho Chulapa</li>
-            <li>Leônidas da Silva</li>
-            <li>Zetti</li>
-            <li>Telê Santana</li>
-        </ul>
-        <hr>
-        <h2>Rivalidades</h2>
-        <p>O São Paulo Futebol Clube tem rivalidades marcantes que fazem parte de sua história. 
-            A principal é com o Corinthians, no clássico Majestoso, símbolo de muita emoção e disputa. Contra o Palmeiras, o Choque-Rei representa a rivalidade técnica entre duas potências paulistas. Já o duelo com o Santos, o San-São, é lembrado por partidas cheias de talento e gols.
-            Esses clássicos reforçam a tradição e a grandeza do Tricolor Paulista no futebol brasileiro.</p>
+                <h2>Fundação do time</h2>
+                <p>
+                    O São Paulo Futebol Clube, fundado em 25 de janeiro de 1930, é um dos clubes mais tradicionais e
+                    bem-sucedidos do futebol brasileiro. Com uma rica história repleta de conquistas nacionais e
+                    internacionais,
+                    o São Paulo é conhecido por sua torcida apaixonada e por revelar grandes talentos ao longo dos anos.
+                </p>
+
+            </section>
+            <section class="section-conteudo">
+
+                <h2>Principais títulos</h2>
+                <table id="tabela" border="1">
+                    <caption>Principais títulos do São Paulo</caption>
+                    <tr>
+                        <th>Títulos</th>
+                        <th>Número de títulos</th>
+                        <th>Ano</th>
+                    </tr>
+                    <tr>
+                        <td>Libertadores</td>
+                        <td class="qtd">3</td>
+                        <td>1992, 1993 e 2005</td>
+                    </tr>
+                    <tr>
+                        <td>Copa do Brasil</td>
+                        <td class="qtd">1</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Brasileiro</td>
+                        <td class="qtd">6</td>
+                        <td>1977, 1986, 1991, 2006, 2007 e 2008</td>
+                    </tr>
+                    <tr>
+                        <td>Mundial</td>    
+                        <td class="qtd">3</td>
+                        <td>1992, 1993, 2005</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="section-conteudo">
+
+                <h2>Ídolos</h2>
+                <ul>
+                    <li>Kaká</li>
+                    <li>Rogério Ceni</li>
+                    <li>Raí</li>
+                    <li>Lugano</li>
+                    <li>Müller</li>
+                    <li>Careca</li>
+                    <li>Luiz Fabiano</li>
+                    <li>Toninho Cerezo</li>
+                    <li>Serginho Chulapa</li>
+                    <li>Leônidas da Silva</li>
+                    <li>Zetti</li>
+                    <li>Telê Santana</li>
+                </ul>
+            </section>
+            <section class="section-conteudo">
+
+                <h2>Rivalidades</h2>
+                <p>
+                    O São Paulo Futebol Clube tem rivalidades marcantes que fazem parte de sua história.
+                    A principal é com o Corinthians, no clássico Majestoso, símbolo de muita emoção e disputa. Contra o
+                    Palmeiras, o Choque-Rei representa a rivalidade técnica entre duas potências paulistas. Já o duelo
+                    com o
+                    Santos, o San-São, é lembrado por partidas cheias de talento e gols.
+                    Esses clássicos reforçam a tradição e a grandeza do Tricolor Paulista no futebol brasileiro.
+                </p>
+            </section>
+        </div>
     </main>
     <footer>&copy; Michel Santos Tundisi Lopo - SPFC</footer>
 </body>
