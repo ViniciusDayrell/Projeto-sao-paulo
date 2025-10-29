@@ -34,7 +34,6 @@ footer{
     margin-top: 20px;
     padding: 10px;
     background-color: #222;
-
 }
 
 #nav-bar ul{
@@ -108,5 +107,49 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*===FORMULARIO===*/
 
+.section-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
 
+#form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#form input,
+#form textarea{
+    outline: unset;
+    padding: 20px;
+    min-width: 300px;
+    border: 1px solid rgb(184, 170, 168);
+    border-radius: 20px;
+}
+
+#form input:focus,
+#form textarea:focus{
+    background-color: wheat;
+}
+
+#form label{
+    margin-left: 10px;
+}
+
+.meu-botão{
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.meu-botão:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

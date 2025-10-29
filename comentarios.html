@@ -32,19 +32,32 @@
         <div class="conteudo-principal">
 
             <h2 id="titulo-formulario">TORCEDOR, faça seu comentário:</h2>
-            <section class="section-formulario">
+            <section class="section-form">
 
-                <form action="" id="formulario">
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br><br>
+                <form action="" id="form">
 
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" name="email" id="email" placeholder="Digite seu email"><br><br>
+                    <div>
 
-                    <label for="comentario">Comentário</label><br>
-                    <textarea name="comentario" id="comentario" placeholder="Faça seu comentário"></textarea><br><br>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
 
-                    <input type="submit" value="Enviar">
+                    <div>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+
+                    <div>
+
+                        <label for="comentario">Comentário</label>
+                        <textarea name="comentario" id="comentario" rows="5" placeholder="Faça seu comentário"></textarea>
+                    </div>
+
+                    <div>
+
+                        <input type="submit" class="meu-botão" value="Enviar">
+                    </div>
                 </form>
             </section>
         </div>
