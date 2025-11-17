@@ -12,9 +12,6 @@ function validarEmail(email){
 function adicionarComentarioNaPagina({nome, email, comentario}){
     const div = document.createElement("div")
     div.classList.add("comentario")
-    div.style.display = "flex"
-    div.style.flexDirection = "colunm"
-    div.style.justifyContent = "center"
 
     const nomeElemento = document.createElement("h4")
     nomeElemento.textContent = nome
