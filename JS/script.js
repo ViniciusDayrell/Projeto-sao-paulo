@@ -4,6 +4,11 @@ const emailInput = document.getElementById("email");
 const comentarioInput = document.getElementById("comentario");
 const listaComentarios = document.getElementById("lista-comentarios")
 
+listaComentarios.style.display = "flex";
+listaComentarios.style.flexDirection = "column";
+listaComentarios.style.justifyContent = "center";
+listaComentarios.style.alignItems = "center";
+
 function validarEmail(email){
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return regex.test(email)
