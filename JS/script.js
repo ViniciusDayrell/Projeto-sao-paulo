@@ -14,6 +14,11 @@ function validarEmail(email){
     return regex.test(email)
 }
 
+function carregarComentario(){
+    const comentarios = JSON.parse(localStorage.getItem("comentarios")) || []
+    comentarios.forEach(adicionarComentarioNaPagina)
+}
+
 function adicionarComentarioNaPagina({id, nome, email, comentario, data}){
     const card = document.createElement("div")
     card.classList.add("comentario-card")
@@ -43,10 +48,48 @@ function adicionarComentarioNaPagina({id, nome, email, comentario, data}){
     `
 
      card.querySelector(".delete-btn").addEventListener("click", () => {
-        if(confirm("Deseja excluir o comentário"?))
+        if(confirm("Deseja excluir o comentário?")){
+            card.classList.add("removendo")
+            setTimeout(() => {
+                removerComentario(id)
+                card.remove()
+            }, 300)
+        }
      })
-       
-        
+
+     listaComentarios.prepend(card)
+}
+
+function escaparHTML(texto){
+    const div = document.createElement('div')
+    div.textContent = texto
+    return div.innerHTML
+}
+
+function salvarComentario(nome, email, comentario){
+    const comentarios = JSON.parse(localStorage.getItem("comentarios")) || []
+    const novoComentario = {
+        id: Date.now(),
+        nome,
+        email,
+        comentario,
+        data: new Date().toLocaleDateString("pt-BR", {
+            day: '2-digit',
+            month: '2-digit',
+            year: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
+        })
+    }
+    comentarios.unshift(novoComentario)
+    localStorage.setItem("comentarios", JSON.stringify(comentarios))
+    return novoComentario
+}
+
+function removerComentario(id){
+    const comentarios = JSON.parse(localStorage.getItem("comentarios")) || []
+    const novoArray = comentarios.filter(c => c.id !== id)
+    localStorage.setItem("comentarios", JSON.stringify(novoArray))
 }
 
 form.addEventListener("submit", (e) =>{
